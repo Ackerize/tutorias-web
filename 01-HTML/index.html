@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=	, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <!-- Etiqueta <div> -->
+    <div>
+      <!-- Etiqueta <p> y <br /> -->
+      <p>
+        Soy un parrafo<br />
+        Soy la segunda linea
+      </p>
+    </div>
+    <!-- Etiqueta <hr /> -->
+    <hr />
+    <div>
+      <!-- Etiqueta <h1> -->
+      <h1>Soy un titulo</h1>
+      <!-- Etiqueta <h2> -->
+      <h2>Soy un subtitulo</h2>
+      <!-- Etiqueta <h3> -->
+      <h3>Soy un subtitulo</h3>
+      <!-- Etiqueta <h4> -->
+      <h4>Soy un subtitulo</h4>
+      <!-- Etiqueta <h5> -->
+      <h5>Soy un subtitulo</h5>
+      <!-- Etiqueta <h6> -->
+      <h6>Soy un subtitulo</h6>
+    </div>
+    <hr />
+    <!-- Etiqueta <ul> -->
+    <ul>
+      <!-- Etiqueta <li> -->
+      <li>Primer elemento</li>
+      <li>Segundo elemento</li>
+      <li>Tercero elemento</li>
+      <li>Cuarto elemento</li>
+    </ul>
+    <hr />
+    <!-- Etiqueta <ol> -->
+    <ol>
+      <li>Primer elemento</li>
+      <li>Segundo elemento</li>
+      <li>Tercero elemento</li>
+      <li>Cuarto elemento</li>
+    </ol>
+    <hr />
+    <!-- Etiqueta <dl> -->
+    <dl>
+      <!-- Etiqueta <dt> -->
+      <dt>Primer elemento</dt>
+      <!-- Etiqueta <dd> -->
+      <dd>Soy la descripcion 1</dd>
+      <dt>Segundo elemento</dt>
+      <dd>Soy la descripcion 2</dd>
+      <dt>Tercero elemento</dt>
+      <dd>Soy la descripcion 3</dd>
+    </dl>
+    <hr />
+    <!-- Etiqueta <a> -->
+    <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+      >Pagina cualquiera</a
+    >
+    <hr />
+    <!-- Etiqueta <table> -->
+    <table>
+      <!-- Etiqueta <thead> -->
+      <thead>
+        <!-- Etiqueta <tr> -->
+        <tr>
+          <!-- Etiqueta <th> -->
+          <th>Nombre</th>
+          <th>Apellido</th>
+        </tr>
+      </thead>
+      <!-- Etiqueta <tbody> -->
+      <tbody>
+        <tr>
+          <!-- Etiqueta <td> -->
+          <td>Juan</td>
+          <td>Perez</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>Perez</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>Perez</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <!-- Etiqueta <label> -->
+    <label>Email:</label>
+    <!-- Etiqueta <form> -->
+    <form>
+      <!--Mensaje personalizado de validación-->
+      <input
+        type="email"
+        required
+        oninvalid="this.setCustomValidity('Ingrese un email válido')"
+        oninput="setCustomValidity('')"
+      />
+      <!-- Etiqueta <button> -->
+      <button type="submit">Enviar</button>
+    </form>
+    <hr />
+    <!-- Etiqueta <textarea> -->
+    <textarea></textarea>
+    <hr />
+    <!-- Etiqueta <select> -->
+    <select>
+      <!-- Etiqueta <option> -->
+      <option>Opcion 1</option>
+      <option>Opcion 2</option>
+      <option>Opcion 3</option>
+      <option>Opcion 4</option>
+      <option>Opcion 5</option>
+    </select>
+    <hr />
+    <!-- Etiqueta <span> -->
+    <p>Hola soy <span>Rudi</span></p>
+    <!-- Etiqueta <b> -->
+    <b>Soy una negrita</b>
+    <!-- Etiqueta <i> -->
+    <i>Soy una cursiva</i>
+    <!-- Etiqueta <img /> -->
+    <br />
+    <img src="./imagen.jpg" width="40" alt="Imagen 1" />
+    <img
+      src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+      width="40"
+      alt="Imagen 2"
+    />
+    <!-- Etiqueta <video controls> / <source /> -->
+    <video controls width="150">
+      <source src="./video.mp4" type="video/mp4" />
+    </video>
+    <!-- Etiqueta <iframe> Video de Youtube -->
+    <iframe
+      width="500"
+      height="540"
+      src="https://www.youtube.com/embed/mr15Xzb1Ook"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
