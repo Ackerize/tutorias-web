@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
+
+#id1 {
+    color: red;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  background-color: #042402;
+  color: yellow;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid red;
+  border-radius: 100px;
+}
+
+div.fondo {
+  background: url("./twitter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 700px;
+  height: 700px;
+}
+
+div.fondo:hover {
+  width: 1000px;
+  opacity: 0.5;
+}
