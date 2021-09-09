@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-item,
+.nav-item ~ li {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.nav-list,
+.apps-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  margin-right: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-item ~ li img {
+  vertical-align: middle;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  width: 20px;
+}
+
+.avatar-icon {
+  width: 35px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 35%;
+}
+
+.search-input {
+  width: 60%;
+}
+
+.search-input {
+  border: 1px solid #dfe1e5;
+  border-radius: 25px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.input-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.search-input:hover {
+  /* #42 */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+input {
+  border-color: white;
+  border-style: none;
+  background-color: white;
+  width: 85%;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.microphone-icon {
+  padding-left: 10px;
+}
+
+.search-icon {
+  padding-right: 10px;
+}
+
+.apps-container {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.apps-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #F1F3F4;
+  cursor: pointer;
+}
+
+.apps-icon {
+  width: 25px;
+  object-fit: cover;
+}
+
+p {
+  text-align: center;
+  padding-top: 20px;  
+}
+
+ul.apps-list li{
+  margin: 25px 20px;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1025px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 481px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .apps-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .apps-container{
+    width: 90%;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+}
