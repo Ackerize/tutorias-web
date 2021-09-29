@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: #006e3b;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 600px;
+  min-height: 200px;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 10px 30px;
+}
+
+.quote {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+footer > span {
+  font-style: italic;
+}
+
+.random-quote {
+  background-color: #2cbaad;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+}
+
+@media screen and (max-width: 680px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 70%;
+  }
+}
