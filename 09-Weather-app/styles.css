@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-primary: #437aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+input {
+    border: none;	
+    width: 100%;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+form > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 75%;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+form > div > i {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+header > h1 {
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+}
+
+header > h1 > span {
+    font-weight: 400;
+}
+
+header {
+    margin-top: 2rem;
+}
+
+main {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "temperature temperature"
+    "temperature temperature"
+    "wind feels"
+    "uv pressure";
+    background-color: var(--color-primary);
+    border-radius: 15px;
+}
+
+.weather-info{
+    grid-area: temperature;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-info > img {
+    width: 75px;
+    height: 75px;
+    margin-top: 0.75rem;
+}
+
+.weather-info > h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.weather-info time > p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.weather-info time {
+    margin-bottom: 2rem;
+}
+
+.temperature > p { 
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.block-info {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #fff;
+    padding: 0.75rem 1rem;
+    color: #fff;
+}
+
+.block-info > p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.block-info > p > span {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.block-info > i {
+    font-size: 20px;
+}
+
+.wind {
+    grid-area: wind;
+}
+
+.feels {
+    grid-area: feels;
+}
+
+.uv {
+    grid-area: uv;
+}
+
+.pressure {
+    grid-area: pressure;
+}
+
+.wind, .uv {
+    border-right: #fff 1px solid;
+}
+
+footer > p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    display: none;
+}
+
+.temperature-container {
+    display: flex;
+    margin: 0 1rem;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.temperature-day {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    border: 1px solid #cecece;
+    margin: 0 0.5rem;
+}
+
+.temperature-day > img {
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem 0;
+}
+
+.temperature-day.active {
+    background-color: var(--color-primary);
+    color: #fff;
+    box-shadow: 0 3px 10px rgb(67 122 255 / 0.9);
+    border: none;
+}
+
+.temperature-day > p {
+    font-weight: 800;
+}
