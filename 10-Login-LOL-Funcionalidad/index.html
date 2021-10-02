@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login LOL</title>
+  </head>
+  <body>
+    <!-- CONTENEDOR -->
+    <div class="container">
+      <!-- LADO IZQUIERDO -->
+      <div class="left-side">
+        <!-- HEADER -->
+        <header class="header">
+          <!-- ICONO  -->
+          <div class="symbol-container">
+            <p class="symbol">?</p>
+          </div>
+
+          <!-- LOGO -->
+          <div class="img-container">
+            <img src="./img/logo.svg" class="logo" alt="Logo" />
+          </div>
+
+          <!-- TITULO -->
+          <p class="subtitle">Ingresar</p>
+        </header>
+
+        <!-- FORMULARIO -->
+        <form class="form">
+          <!-- INPUT USUARIO -->
+          <div class="control-input">
+            <input
+              autofocus="true"
+              autocomplete="off"
+              type="text"
+              name="username"
+              id="username-for"
+              required
+            />
+            <label for="username-for">nombre de usuario</label>
+          </div>
+
+          <!-- INPUT PASSWORD -->
+          <div class="control-input">
+            <input
+              autocomplete="off"
+              type="password"
+              name="password"
+              id="password-for"
+              required
+            />
+            <label for="password-for">contraseña</label>
+            <i class="fas fa-eye"></i>
+          </div>
+
+          <!-- BOTONES AUTENTICACION -->
+          <div class="auth-container">
+            <button type="button" class="btn facebook">
+              <img src="./img/fb.svg" alt="facebook" />
+            </button>
+            <button type="button" class="btn google">
+              <img src="./img/google.svg" alt="google" />
+            </button>
+            <button type="button" class="btn apple">
+              <img src="./img/apple.svg" alt="apple" />
+            </button>
+          </div>
+
+          <!-- BOTON PERMANECER CONECTADO -->
+          <label class="container-check">
+            <input type="checkbox" name="keep" />
+            <span class="label">Permanecer conectado</span>
+            <span class="checkmark"></span>
+          </label>
+
+          <!-- BOTON ENVIAR -->
+          <div class="btn-container">
+            <button disabled>
+              <i class="lnr lnr-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- FOOTER -->
+        <footer>
+          <div class="links">
+            <a href="#!">¿no puedes iniciar sesión?</a>
+            <a href="#!">crear una cuenta</a>
+          </div>
+          <div class="version">
+            <a href="#!">V40.0.0</a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- LADO DERECHO -->
+      <div class="right-side">
+        <nav>
+          <span> - </span>
+          <span>?</span>
+          <span>X</span>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

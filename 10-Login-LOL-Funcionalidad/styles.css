@@ -1,0 +1,327 @@
+@import url(//db.onlinewebfonts.com/c/6633a78ec47bc270550144ed9f284036?family=FF+Mark);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: "FF Mark";
+  user-select: none;
+}
+
+/* CONTENEDOR */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 400px auto;
+}
+
+/* LADO IZQUIERDO */
+.left-side {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 55px;
+}
+
+/* SIMBOLO */
+.symbol {
+  background: #b2b2b2;
+  color: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbol-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* LOGO */
+.logo {
+  width: 70px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* TITULO */
+.subtitle {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* FORMULARIO */
+.control-input {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.control-input > input {
+  width: 100%;
+  border: none;
+  border: solid transparent 2px;
+  border-radius: 5px;
+  font-family: "FF Mark";
+  background: #ededed;
+  color: #000;
+  padding: 16px 38px 5px 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.control-input > input:focus {
+  background: #f9f9f9;
+  border-color: #000;
+}
+
+.control-input > input ~ label {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #999999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  transition: all 0.15s ease;
+}
+
+/* AL QUITARLE FOCUS SE ASOLAPAN */
+.control-input > input:focus ~ label,
+.control-input > input:valid ~ label {
+  top: 12px;
+  font-size: 8px;
+  left: 10px;
+}
+
+.control-input > i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 18px;
+  color: #000;
+  transition: all 0.15s ease;
+  visibility: hidden;
+}
+
+.control-input > input:focus ~ i {
+  visibility: visible;
+}
+
+.control-input > i:hover {
+  cursor: pointer;
+}
+
+/* CONTENEDOR AUTENTICACION */
+button > img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.auth-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30px;
+  column-gap: 8px;
+  margin-bottom: 1.2rem;
+}
+
+.auth-container button {
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  border: solid 2px #ededed;
+}
+
+.btn.facebook {
+  background-color: #1877f2;
+  border: none;
+}
+
+.btn.apple {
+  background-color: #000;
+  border: none;
+}
+
+/* CONTENEDOR CHECKBOX */
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #999999;
+  user-select: none;
+}
+
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* CREAMOS EL CHEQUE PERSONALIZADO */
+.container-check .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ededed;
+  border-radius: 5px;
+  transition: 0.1s all ease;
+}
+
+.container-check .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 0px;
+  width: 5px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg) scale(0.7);
+}
+
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-check input:checked ~ .checkmark {
+  background-color: #d13639;
+}
+
+.container-check input:checked ~ .label {
+  color: black;
+}
+
+/* BOTON ENVIAR */
+.btn-container {
+  text-align: center;
+  margin: 55px 0 60px 0;
+}
+
+.btn-container button {
+  border: solid 2px #ededed;
+  outline: none;
+  font-size: 25px;
+  padding: 15px 18px;
+  border-radius: 20px;
+  color: #ededed;
+  background: white;
+  user-select: none;
+  transition: 0.1s all ease;
+}
+
+.btn-container button:enabled {
+  border: solid 2px #d13639;
+  background: #d13639;
+  cursor: pointer;
+}
+
+.btn-container button i {
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links,
+.version {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+footer a {
+  text-transform: uppercase;
+  color: #b2b2b2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: black;
+}
+
+.version a:hover {
+  color: #848484;
+}
+
+/* LADO DERECHO */
+.right-side {
+  background-image: url("./img/splash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* BOTONES DE MINIMIZAR, AYUDA Y BORRAR */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav span {
+  width: 50px;
+  height: 50px;
+  color: white;
+  text-shadow: 3px 0px 4px rgba(150, 150, 150, 0.76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+nav > span {
+  font-size: 20px;
+}
+
+nav > span:first-child {
+  font-size: 40px;
+}
+
+nav > span:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav > span:last-child:hover {
+  background-color: red;
+}
