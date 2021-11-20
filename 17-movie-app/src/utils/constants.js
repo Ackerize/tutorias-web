@@ -1,0 +1,1 @@
+export const API_URL = 'https://movie-api-web-2021.herokuapp.com/api/v1';
